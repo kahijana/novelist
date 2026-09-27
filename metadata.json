@@ -1,0 +1,6 @@
+{
+  "name": "Novel Reader — Desktop Ebook Experience for PDF Novels",
+  "description": "Desktop web app that transforms PDF novels into a distraction-free, Kindle-like ebook reading experience with reflow typography, dark/sepia modes, page bookmarks, search, and reading progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

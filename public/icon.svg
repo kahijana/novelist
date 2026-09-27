@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#212529" />
+      <stop offset="100%" stop-color="#121517" />
+    </linearGradient>
+    <linearGradient id="pageGradLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E8E4DD" />
+      <stop offset="100%" stop-color="#FAF8F5" />
+    </linearGradient>
+    <linearGradient id="pageGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8E4DD" />
+      <stop offset="100%" stop-color="#FAF8F5" />
+    </linearGradient>
+    <linearGradient id="bookmarkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle with subtle border -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)" />
+  <rect x="2" y="2" width="508" height="508" rx="102" fill="none" stroke="#374151" stroke-width="3" opacity="0.6" />
+
+  <!-- Book Spine / Shadow beneath -->
+  <path d="M 256 392 C 220 376 130 372 76 384 L 76 392 C 130 380 220 384 256 400 C 292 384 382 380 436 392 L 436 384 C 382 372 292 376 256 392 Z" fill="#0A0C0E" opacity="0.8" />
+
+  <!-- Open Book Pages (Geometric & Clean) -->
+  <!-- Left Page Stack Base -->
+  <path d="M 256 376 C 216 358 132 354 84 366 L 84 154 C 132 142 216 146 256 166 Z" fill="#D3CEBF" />
+  <!-- Left Page Main -->
+  <path d="M 256 372 C 216 354 136 350 90 360 L 90 148 C 136 138 216 142 256 162 Z" fill="url(#pageGradLeft)" />
+
+  <!-- Subtle text rule lines on left page -->
+  <line x1="126" y1="202" x2="226" y2="194" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="126" y1="236" x2="226" y2="228" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="126" y1="270" x2="226" y2="262" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="126" y1="304" x2="190" y2="299" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Right Page Stack Base -->
+  <path d="M 256 376 C 296 358 380 354 428 366 L 428 154 C 380 142 296 146 256 166 Z" fill="#D3CEBF" />
+  <!-- Right Page Main -->
+  <path d="M 256 372 C 296 354 376 350 422 360 L 422 148 C 376 138 296 142 256 162 Z" fill="url(#pageGradRight)" />
+
+  <!-- Subtle text rule lines on right page -->
+  <line x1="286" y1="194" x2="386" y2="202" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="286" y1="228" x2="386" y2="236" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="286" y1="262" x2="386" y2="270" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+  <line x1="286" y1="299" x2="350" y2="304" stroke="#9CA3AF" stroke-width="4.5" stroke-linecap="round" opacity="0.4" />
+
+  <!-- Center Crease / Gutter line -->
+  <line x1="256" y1="162" x2="256" y2="372" stroke="#B8B2A5" stroke-width="3" />
+
+  <!-- Warm Amber Bookmark Ribbon hanging down center -->
+  <path d="M 248 138 L 264 138 L 264 274 L 256 264 L 248 274 Z" fill="url(#bookmarkGrad)" />
+</svg>

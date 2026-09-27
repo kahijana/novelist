@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', Georgia, Cambria, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-dyslexic: 'Atkinson Hyperlegible', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-reading-serif {
+  font-family: var(--font-serif);
+}
+
+.font-reading-sans {
+  font-family: var(--font-sans);
+}
+
+.font-reading-dyslexic {
+  font-family: var(--font-dyslexic);
+}
+
+/* Reading Theme Tokens */
+.theme-light {
+  --bg-canvas: #F8F7F3;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #F0EFEA;
+  --text-main: #252525;
+  --text-muted: #6B6861;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --accent-color: #252525;
+  --highlight-yellow: #FEF08A;
+  --highlight-green: #BBF7D0;
+  --highlight-blue: #BAE6FD;
+  --highlight-pink: #FBCFE8;
+}
+
+.theme-sepia {
+  --bg-canvas: #F3E8D0;
+  --bg-surface: #EADCBF;
+  --bg-surface-subtle: #E1D2B2;
+  --text-main: #3B3025;
+  --text-muted: #6E5F50;
+  --border-subtle: rgba(59, 48, 37, 0.12);
+  --accent-color: #78350F;
+  --highlight-yellow: #E5D08F;
+  --highlight-green: #B8D8AE;
+  --highlight-blue: #A8CEE0;
+  --highlight-pink: #E8B7CC;
+}
+
+.theme-dark {
+  --bg-canvas: #181818;
+  --bg-surface: #242424;
+  --bg-surface-subtle: #2C2C2C;
+  --text-main: #E5E5E5;
+  --text-muted: #9E9E9E;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --accent-color: #F5F5F5;
+  --highlight-yellow: #854D0E;
+  --highlight-green: #166534;
+  --highlight-blue: #075985;
+  --highlight-pink: #9D174D;
+}
+
+.theme-oled {
+  --bg-canvas: #000000;
+  --bg-surface: #121212;
+  --bg-surface-subtle: #1C1C1C;
+  --text-main: #E5E5E5;
+  --text-muted: #8E8E8E;
+  --border-subtle: rgba(255, 255, 255, 0.14);
+  --accent-color: #FFFFFF;
+  --highlight-yellow: #854D0E;
+  --highlight-green: #166534;
+  --highlight-blue: #075985;
+  --highlight-pink: #9D174D;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.4);
+}
+
